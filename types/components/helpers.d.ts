@@ -1,7 +1,5 @@
 import * as React from 'react';
 
-export type Omit<T, U> = Pick<T, Exclude<keyof T, keyof U>>;
-
 export type PropsOf<
   Tag extends React.ReactType
 > = Tag extends keyof JSX.IntrinsicElements
